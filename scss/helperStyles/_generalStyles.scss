@@ -1,0 +1,28 @@
+.title {
+   font-size: 32px;
+   letter-spacing: 1px;
+   line-height: 48px;
+   text-transform: uppercase;
+   color: #3c3f3d;
+   font-weight: 700;
+   font-family: "PT Serif";
+   @media (max-width: $media3 +px) {
+      font-size: 24px;
+      line-height: 36px;
+   }
+}
+
+.bluebg {
+   position: relative;
+   overflow: hidden;
+   &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: -120px;
+      width: 40%;
+      height: 100%;
+      @include transformRotate(18deg);
+      background-image: linear-gradient(198deg, rgba(0, 115, 151, 0.9999999999999999) 0%, rgba(0, 115, 151, 0) 100%);
+   }
+}

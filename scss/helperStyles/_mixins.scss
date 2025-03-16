@@ -1,0 +1,40 @@
+@mixin flexbox() {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   font-size: 0;
+}
+
+@mixin transformRotate($deg) {
+   -webkit-transform: rotate($deg);
+   -moz-transform: rotate($deg);
+   -ms-transform: rotate($deg);
+   -o-transform: rotate($deg);
+   transform: rotate($deg);
+}
+
+@mixin transformScale($scale) {
+   -webkit-transform: scale($scale);
+   -moz-transform: scale($scale);
+   -ms-transform: scale($scale);
+   -o-transform: scale($scale);
+   transform: scale($scale);
+}
+
+@mixin transformSkew($skew) {
+   -webkit-transform: skew($skew);
+   -moz-transform: skew($skew);
+   -ms-transform: skew($skew);
+   -o-transform: skew($skew);
+   transform: skew($skew);
+}
+
+@mixin transition($time, $delay) {
+   -webkit-transition: all $time ease $delay;
+   -moz-transition: all $time ease $delay;
+   -ms-transition: all $time ease $delay;
+   -o-transition: all $time ease $delay;
+   transition: all $time ease $delay;
+}
